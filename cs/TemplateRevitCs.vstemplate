@@ -1,0 +1,41 @@
+<VSTemplate Type="Project" Version="2.0.0"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+    <TemplateData>
+        <Name>Revit 2020 Addin</Name>
+        <Description>Class library template for a Revit 2020 C# .NET add-in project</Description>
+        <Icon>TemplateIcon.ico</Icon>
+        <ProjectType>CSharp</ProjectType>
+        <LanguageTag>C#</LanguageTag>
+        <PlatformTag>windows</PlatformTag>
+        <ProjectTypeTag>extension</ProjectTypeTag>
+        <ProjectTypeTag>desktop</ProjectTypeTag>
+        <CreateNewFolder>true</CreateNewFolder>
+        <DefaultName>RevitAddin</DefaultName>
+        <ProvideDefaultName>true</ProvideDefaultName>
+        <LocationField>Enabled</LocationField>
+        <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    </TemplateData>
+    <TemplateContent>
+        <Project ReplaceParameters="true" File="TemplateRevitCs.csproj">
+            <ProjectItem ReplaceParameters="true" TargetFileName="$projectname$.csproj.user">TemplateRevitCs.csproj.user</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="$projectname$.addin">RegisterAddin.addin</ProjectItem>
+            <ProjectItem ReplaceParameters="true">Properties\AssemblyInfo.cs</ProjectItem>
+			<ProjectItem ReplaceParameters="true">Forms/MainForm.xaml</ProjectItem>
+			<ProjectItem ReplaceParameters="true">Forms/MainForm.xaml.cs</ProjectItem>
+			<ProjectItem ReplaceParameters="true">Forms/Resources.xaml</ProjectItem>
+			<ProjectItem ReplaceParameters="true">Forms/Resources.xaml.cs</ProjectItem>
+			<ProjectItem ReplaceParameters="true">Forms/StyleableWindow\ControlDoubleClickBehavior.cs</ProjectItem>
+			<ProjectItem ReplaceParameters="true">Forms/StyleableWindow\ShowSystemMenuBehavior.cs</ProjectItem>
+			<ProjectItem ReplaceParameters="true">Forms/StyleableWindow\SystemMenuManager.cs</ProjectItem>
+			<ProjectItem ReplaceParameters="true">Forms/StyleableWindow\WindowCloseCommand.cs</ProjectItem>
+			<ProjectItem ReplaceParameters="true">Forms/StyleableWindow\WindowDragBehavior.cs</ProjectItem>
+			<ProjectItem ReplaceParameters="true">Forms/StyleableWindow\WindowMaximizeCommand.cs</ProjectItem>
+			<ProjectItem ReplaceParameters="true">Forms/StyleableWindow\WindowMinimizeCommand.cs</ProjectItem>
+			<ProjectItem ReplaceParameters="true">Forms/StyleableWindow\WindowResizeBehavior.cs</ProjectItem>
+			<ProjectItem ReplaceParameters="true">Resources\Icon.png</ProjectItem>
+			<ProjectItem ReplaceParameters="true">Utils/Util.cs</ProjectItem>
+			<ProjectItem ReplaceParameters="true">Utils/CommonAssemblyInfo.cs</ProjectItem>
+			<ProjectItem ReplaceParameters="true">App.cs</ProjectItem>
+        </Project>
+    </TemplateContent>
+</VSTemplate>
